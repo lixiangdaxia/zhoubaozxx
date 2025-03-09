@@ -2,31 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <title>动态伪类：在其他选择器上的应用</title>
-    <style type="text/css">
-    /*作用在输入框*/
-    input:hover{
-        background-color:lightblue;
-        width:200px;
-        height:30px;
-    }
-    input:active{
-        background-color:green;
-    }
-    img:hover{
-        width:200px;
-    }
-    input:focus{
-        background-color:lightblue;
-        width:200px;
-        height:30px;
-    }
-        
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-结构（位置）伪类选择器</title>
+    <style>
+        p{
+            width :40px;
+            height:40px;
+            background-color:center;
+        }
+        /*指定第几个子元素*/
+        p:nth-child(4){
+            background-color:orange;
+        }
+        /*指定倒数几个元素*/
+        p:nth-last-child(3){
+            background-color:skyblue;
 
+        }
+        /*奇数元素*/
+        p:nth-child(odd){
+            background-color:skyblue;
+        }
+        /*偶数元素*/
+        p:nth-child(even){
+            background-color:firebrick;
+        }
+        /*3的倍数，其中从1开始*/
+        p:nth-child(3n){
+            background-color: orange;
+        }
+    </style>
 </head>
 <body>
-   <form action="#" method="get"></form> 
+    
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+    </div>
 </body>
 </html>
