@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>伪类选择器-链接伪类选择器</title>
-    <style type="text/css">
     
-   /*链接未被访问时*/
-   a:link {
-    color:red;
-    font-size:20px;
-    /*文字加粗*/
-    font-weighjt:700;
-   } 
-   /*链接被访问过*/
-   a:visited{
-    color:blue;
-   }
-   a:hover{
-    color:green;
-   }
-
+    <title>动态伪类：在其他选择器上的应用</title>
+    <style type="text/css">
+    /*作用在输入框*/
+    input:hover{
+        background-color:lightblue;
+        width:200px;
+        height:30px;
+    }
+    input:active{
+        background-color:green;
+    }
+    img:hover{
+        width:200px;
+    }
+    input:focus{
+        background-color:lightblue;
+        width:200px;
+        height:30px;
+    }
+        
 </style>
+
 </head>
 <body>
-    <a href="a.html" target="-blank">不存在的网页</a><br/>
-    <a href="http://www.itsishu.cn" target="-blank">IT私塾</a><br/>
-   
-   
-
+   <form action="#" method="get"></form> 
 </body>
 </html>
